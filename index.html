@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider JQuery</title>
+    <link rel="stylesheet" href="libs/@fortawesome/fontawesome-free/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <div class="header-logo">Comics</div>
+        <div class="header-menu">
+          <div class="header-menu__item">
+            <a class="header-menu__link" href="#">Home</a>
+          </div>
+          <div class="header-menu__item">
+            <a class="header-menu__link" href="#">About</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div id="carousel" class="carousel">
+        <div id="slides" class="slides">
+          <div class="slide active" style="background-image: url(assets/img/img1.jpg)"></div>
+          <div class="slide" style="background-image: url(assets/img/img2.jpg)"></div>
+          <div class="slide" style="background-image: url(assets/img/img3.jpg)"></div>
+          <div class="slide" style="background-image: url(assets/img/img4.jpg)"></div>
+          <div class="slide" style="background-image: url(assets/img/img5.jpg)"></div>
+        </div>
+        <div class="controls">
+          <div class="control prev"><i class="fas fa-angle-left"></i></div>
+          <div class="control pause-play"><i class="far fa-play-circle"></i></div>
+          <div class="control next"><i class="fas fa-angle-right"></i></div>
+        </div>
+        <div class="indicators">
+          <span class="indicator active" data-slide-to="0"></span>
+          <span class="indicator" data-slide-to="1"></span>
+          <span class="indicator" data-slide-to="2"></span>
+          <span class="indicator" data-slide-to="3"></span>
+          <span class="indicator" data-slide-to="4"></span>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">&copy; Carousel JQuery</div>
+    </footer>
+    <script src="libs/jquery/dist/jquery.min.js"></script>
+    <script src="assets/js/main.js" type="module"></script>
+  </body>
+</html>
